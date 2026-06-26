@@ -1,18 +1,33 @@
-
-
-
-
-
-
-
-
-
-
-\
-
 # Bookflix
 
-**AI-Powered Digital Library, Book Rental & Reading Platform**
+<p align="center">
+  <strong>AI-Powered Digital Library, Book Rental & Reading Platform</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Material_UI-007FFF?style=for-the-badge&logo=mui&logoColor=white" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
+  <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+</p>
+
+---
+
+## 📌 Overview
 
 Bookflix is a full-stack digital library platform that allows users to browse books, rent or purchase books, manage their personal library, read PDF books, access audio books, leave reviews, and receive AI-powered book recommendations.
 
@@ -40,16 +55,39 @@ The project consists of a React TypeScript frontend, a Node.js Express REST API,
 
 ## 📸 Screenshots
 
-Add screenshots here after uploading them to GitHub.
+### User Application
 
-Recommended order:
+| Home Page                                                                                                                           | Book Detail                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/user-attachments/assets/b2d4765e-c1a9-4a29-8853-734455392427" alt="Bookflix Home Page" width="100%" /> | <img src="https://github.com/user-attachments/assets/180f63f5-4d6b-4249-adf1-eae729112f71" alt="Bookflix Book Detail" width="100%" /> |
 
-* Login / Register
-* Home / Book List
-* Book Detail
-* My Library
-* Recommendations
-* Admin Dashboard
+| My Library                                                                                                                           | Recommendations                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/user-attachments/assets/b1749bc8-9eea-428c-82d2-a2755120a1c4" alt="Bookflix My Library" width="100%" /> | <img src="https://github.com/user-attachments/assets/c34ae207-b1ba-4465-a34c-3708ae122a20" alt="Bookflix Recommendations" width="100%" /> |
+
+| Login                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/user-attachments/assets/5dc635ce-3817-4056-993c-7649a34f164f" alt="Bookflix Login" width="100%" /> |
+
+---
+
+### Admin Panel
+
+| Admin Dashboard                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/user-attachments/assets/2da4b955-0f02-48ed-b598-0aca05bdea41" alt="Bookflix Admin Dashboard" width="100%" /> |
+
+| Book Management                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/user-attachments/assets/54649d88-0ba4-4139-b061-0e48515aa021" alt="Bookflix Book Management" width="100%" /> |
+
+| User Management                                                                                                                           | Subscription Management                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/user-attachments/assets/8a6b1a4a-8da6-4db1-bd20-d4556a592ba4" alt="Bookflix User Management" width="100%" /> | <img src="https://github.com/user-attachments/assets/b24520e6-9dfd-4572-a2a2-7b18b2ce68fa" alt="Bookflix Subscription Management" width="100%" /> |
+
+| Comment Management                                                                                                                           |
+| -------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/user-attachments/assets/2e2a2055-7501-4028-a0fb-33fba7766f6c" alt="Bookflix Comment Management" width="100%" /> |
 
 ---
 
@@ -193,50 +231,25 @@ erDiagram
 
 ## 📂 Project Structure
 
-### 🎨 Frontend (`frontend/`)
+```text
+bookflix/
+├── frontend/      # React TypeScript frontend
+├── backend/       # Node.js Express REST API
+├── ai_service/    # FastAPI recommendation service
+└── README.md
+```
 
-React TypeScript application responsible for:
+### Frontend (`frontend/`)
 
-* Authentication pages
-* Book listing and filtering
-* Book detail pages
-* Shopping cart
-* Payment simulation
-* Personal library
-* PDF and audio book access
-* Recommendation page
-* User profile
-* Admin UI
+React TypeScript application responsible for authentication pages, book listing, book detail pages, shopping cart, payment simulation, personal library, recommendation pages, user profile, and admin UI.
 
----
+### Backend API (`backend/`)
 
-### 🌐 Backend API (`backend/`)
+Node.js Express REST API responsible for user authentication, book management, rental operations, reading progress, user library management, comments, subscriptions, admin operations, and Swagger API documentation.
 
-Node.js Express REST API responsible for:
+### AI Service (`ai_service/`)
 
-* User authentication
-* Book management
-* Category management
-* Rental operations
-* Reading progress
-* User library management
-* Comment and rating operations
-* Subscription management
-* Admin operations
-* Swagger API documentation
-
----
-
-### 🤖 AI Service (`ai_service/`)
-
-FastAPI service responsible for:
-
-* Training recommendation models
-* Preparing user-book rating data
-* Creating user-item matrices
-* Calculating user and item similarity
-* Generating personalized recommendations
-* Handling cold-start recommendation cases
+FastAPI service responsible for preparing recommendation data, creating user-item matrices, calculating user and item similarities, training recommendation models, and returning personalized book recommendations.
 
 ---
 
@@ -285,7 +298,9 @@ FastAPI service responsible for:
 
 Interactive API documentation is available through Swagger after running the backend:
 
-`http://localhost:5000/api-docs`
+```text
+http://localhost:5000/api-docs
+```
 
 ---
 
@@ -295,18 +310,87 @@ The AI recommendation service exposes endpoints for model training and personali
 
 ### Main Endpoints
 
-* `POST /ai/train`
-* `GET /ai/similar-users-recommendations/{user_id}`
+```text
+POST /ai/train
+GET  /ai/similar-users-recommendations/{user_id}
+```
 
 FastAPI documentation is available after running the AI service:
 
-`http://localhost:8000/docs`
+```text
+http://localhost:8000/docs
+```
+
+---
+
+## ⚙️ Local Development
+
+### 1. Start PostgreSQL
+
+```bash
+cd backend
+docker compose up -d
+```
+
+### 2. Start Backend API
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+Backend runs on:
+
+```text
+http://localhost:5000
+```
+
+Swagger documentation:
+
+```text
+http://localhost:5000/api-docs
+```
+
+### 3. Start Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs on:
+
+```text
+http://localhost:5173
+```
+
+### 4. Start AI Service
+
+```bash
+cd ai_service
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
+
+AI service runs on:
+
+```text
+http://localhost:8000
+```
+
+FastAPI documentation:
+
+```text
+http://localhost:8000/docs
+```
 
 ---
 
 ## 🚀 Roadmap
 
-### ✅ Completed
+### Completed
 
 * React TypeScript frontend
 * Express REST API
@@ -322,7 +406,7 @@ FastAPI documentation is available after running the AI service:
 * FastAPI AI recommendation service
 * Collaborative filtering recommendation logic
 
-### 🚧 In Progress
+### In Progress
 
 * Repository cleanup
 * README and documentation improvements
@@ -330,7 +414,7 @@ FastAPI documentation is available after running the AI service:
 * Screenshots and demo media
 * API documentation separation
 
-### 🔮 Planned
+### Planned
 
 * Production deployment
 * CI/CD pipeline
@@ -340,69 +424,6 @@ FastAPI documentation is available after running the AI service:
 * Cloud storage for PDF and audio assets
 * Role-based authorization improvements
 * Unit and integration tests
-
----
-
-## ⚙️ Local Development
-
-### Backend
-
-```bash
-cd backend
-npm install
-npm run dev
-```
-
-Backend runs on:
-
-`http://localhost:5000`
-
-Swagger documentation:
-
-`http://localhost:5000/api-docs`
-
----
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend runs on:
-
-`http://localhost:5173`
-
----
-
-### AI Service
-
-```bash
-cd ai_service
-pip install -r requirements.txt
-uvicorn main:app --reload --port 8000
-```
-
-AI service runs on:
-
-`http://localhost:8000`
-
-FastAPI documentation:
-
-`http://localhost:8000/docs`
-
----
-
-### PostgreSQL with Docker Compose
-
-```bash
-cd backend
-docker compose up -d
-```
-
-This starts a PostgreSQL database and loads the initial schema and seed data.
 
 ---
 
